@@ -3,7 +3,6 @@ $(document).ready(function(){
 	
 	function refreshList() {
 		$('.current-teams').load('./teams.php');
-		
 	}
 	var refreshId = setInterval(refreshList, 1000);
 	
@@ -18,7 +17,7 @@ $(document).ready(function(){
 				var totalClans = ($('.team').length);
 				
 				if (totalClans === maxNumOfClans){
-					alert("Max number of clans(" + maxNumOfClans + ") created.");
+				       alert("Max number of clans(" + maxNumOfClans + ") created.");
 				}
 			},
 			error: function() {
@@ -35,7 +34,6 @@ $(document).ready(function(){
 		var team = $(this).attr("id");
 		$.post('./teams.php', { leaveteam: team }, function(data) {
 		});
-		
 	});
 	
 	function validate(){
