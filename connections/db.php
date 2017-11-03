@@ -1,6 +1,5 @@
 <?php
     class Db{
-
         protected static $connection;
         public $getRows = [];
 
@@ -43,41 +42,8 @@
               return false;
           }
        }
-
-       public function topPlayers(){
-           $connection = $this->connect();
-           $getRows = $connection->query("SELECT count(username) FROM users");
-           $result = $connection->query("SELECT username FROM users LIMIT 5");
-
-           $get_rankings = [1,2,3,4,5];
-           $get_image_path = "images/";
-           $path = "";
-           $total = 0;
-           $rows = [];
-
-           if ($getRows->num_rows > 0){
-               while ($row = mysqli_fetch_array($getRows)){
-                   $count = '';
-                   $count .= $row[0];
-                   $max_players = $count;
-               }
-           }
-
-           while ($row = $result->fetch_assoc()){
-               $rows[] = $row;
-           }
-           for ($x = 0; $x < $max_players; $x++){
-               $total = $get_rankings[$x];
-               $path .=  "<img src = '{$get_image_path}{$total}.png'>\n <span class = 'rank1'>{$rows[$x]['username']}</span><br/>";
-           }
-           return $path;
-       }
     }
 
     $db = new Db();
-    // $top_players = $db->topPlayers();
-
     $clanInfo = $db->select("SELECT id, name, members, emblem, password FROM clans LIMIT 4");
-
-
 ?>
