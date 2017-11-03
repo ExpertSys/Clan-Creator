@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana", sans-serif;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    height: 1200px;
+    overflow: auto;
+
+}
+
+.content{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    height: 1000px;
+  text-align: center;
+}
+
+.inner-content{
+    width: 70%;
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.top-teams{
+    display: inline-block;
+    width:39%;
+    margin-left: 8.5%;
+    position: relative;
+}
+
+#noData{
+    color:#e1e1e1;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    top: 10px;
+}
+
+.findTeamModule{
+    width: 600px;
+    height: 530px;
+    position: absolute;
+    background:#5B6C85;
+    margin-left: -170px;
+    margin-top: 20%;
+    z-index:2;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+.findTeamModule h1{
+    text-align: center;
+    padding-top: 20px;
+    color:#ffffff;
+    font-size: 18px;
+
+}
+
+.current-teams{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.current-teams .team{
+    width: 220px;
+    height: 80px;
+    background:#343B40;
+    margin: 30px 0px 0px 30px;
+    border-bottom:1px solid #fe280e;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    float: left;
+    position: relative;
+    left: 35px;
+}
+
+.current-teams .team img{
+    width: 34px;
+    height: 34px;
+    float: left;
+    margin-left: 17px;
+    margin-top: 10px;
+}
+
+.current-teams .team .clanName{
+    color:#FFF;
+    text-transform: none;
+    font-size: 12px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+    float: left;
+    font-weight: bold;
+}
+
+.current-teams .team .clanMembers{
+    color:#FFF;
+    text-transform: none;
+    font-size: 12px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+    float: left;
+    clear:both;
+}
+
+.current-teams .team .join{
+    color:#FFF;
+    text-transform: none;
+    font-size: 12px;
+    position: relative;
+    top: 7px;
+    right: 10px;
+    float: right;
+    background:#db401a;
+    padding: 2px 7px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border:1px solid #db401a;
+}
+
+#highlight{
+    color:#fff;
+    font-weight: bold;
+    text-transform: none;
+    font-size:12px;
+}
+
+#close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    color:#FFF;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+#close:hover{
+    transform: rotate(90deg);
+    opacity: 0.7;
+}
+
+#tip{
+    clear:both;
+    float: left;
+    position: relative;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-size: 12px;
+    color:#fff;
+}
+
+.new-team{
+    clear:both;
+    position: relative;
+    float: left;
+    margin-left: 65px;
+    margin-top: 30px;
+}
+
+.new-team input[type=text]{
+    width: 345px;
+    height: 30px;
+    outline: none;
+    border-bottom:1px solid #fe280e;
+    border-left: 1px solid #343C40;
+    border-right: 1px solid #343C40;
+    border-top: 1px solid #343C40;
+    background:#343C40;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    color:#FFF;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    line-height: 90px;
+}
+
+.new-team input[type=submit]{
+    width: 105px;
+    height: 80px;
+    outline: none;
+    border-bottom:1px solid #343C40;
+    border-left: 1px solid #343C40;
+    border-right: 1px solid #343C40;
+    border-top: 1px solid #343C40;
+    background:#343C40;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    color:#FFF;
+    text-align: center;
+    float: right;
+    right:-20px;
+    position: relative;
+    top: -37px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.new-team input[type=submit]:hover{
+    opacity: 0.9;
+}
+
+.newUser{
+    margin-left: 150px;
+    margin-top: 25%;
+
+}
+
+.newUser form span:first-child{
+    color:#FFF;
+    text-transform: none;
+    position: relative;
+    left: -70px;
+
+}
+
+.newUser form input[type=text]{
+    width: 270px;
+    height:30px;
+    border-bottom:1px solid #fe280e;
+    border-left: 1px solid #343C40;
+    border-right: 1px solid #343C40;
+    border-top: 1px solid #343C40;
+    background:#343C40;
+    margin-top: 20px;
+    color:#FFF;
+    outline: none;
+    margin-left: -150px;
+    transition: border-bottom 200ms ease-in-out;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+}
+
+.newUser form input[type=text]:focus{
+    border-bottom:1px solid #fff;
+}
+
+.newUser form input[type=submit]{
+    width: 150px;
+    height:30px;
+    outline: none;
+    border-bottom:1px solid #343C40;
+    border-left: 1px solid #343C40;
+    border-right: 1px solid #343C40;
+    border-top: 1px solid #343C40;
+    background:#343C40;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    color:#FFF;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    display: block;
+    margin-left: 74.5px;
+}
+
+.findTeamModule .validation{
+    text-align:center;
+    padding-top: 50px;
+    position: relative;
+    width: 180px;
+    margin: 0 auto;
+}
+
+.findTeamModule .validation .usernameCheck span{
+    text-transform: none;
+    font-weight: normal;
+    color:#8bcc53;
+    font-size: 12px;
+}
+
+.checkBox{
+    background:#343D40;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 5px;
+    bottom: -3px;
+    border-radius: 2px;
+    padding: 3px 3px 4px 3px;
+}
+
+.check{
+    position: relative;
+    cursor: pointer;
+}
+
+.leaveTeam{
+    float: right;
+    color:#FFF;
+}
+
+a{
+  text-decoration: none;
+  color:#FFF;
+}
